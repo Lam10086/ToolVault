@@ -2,6 +2,7 @@
   "name": "freeresource",
   "private": false,
   "description": "A local-first, AI-powered personal tool and asset manager built with an infinite canvas workflow.",
+  "repository": "Lam10086/ToolVault",
   "version": "1.0.0",
   "author": "TiAmoLam <tiamolam@freeresource.com>",
   "license": "MIT",
