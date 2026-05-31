@@ -3,7 +3,7 @@
   "private": false,
   "description": "A local-first, AI-powered personal tool and asset manager built with an infinite canvas workflow.",
   "version": "1.0.0",
-  "author": "TiAmoLam",
+  "author": "TiAmoLam <tiamolam@freeresource.com>",
   "license": "MIT",
   "type": "module",
   "main": "electron/main.js",
