@@ -42,6 +42,13 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
+          body: |
+            ### 🍎 macOS 安装须知 (macOS Installation)
+            由于本项目未进行苹果官方的代码签名，下载 `.dmg` 安装后若提示 **“已损坏无法打开”** 或 **“无法验证开发者”**，请在终端（Terminal）执行以下命令解除隔离：
+            ```bash
+            sudo xattr -r -d com.apple.quarantine /Applications/FreeResource.app
+            ```
+            *(注：若您修改了应用名称，请替换最后的路径)*
           files: |
             release/*.exe
             release/*.dmg
