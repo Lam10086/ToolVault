@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom design tokens (OKLCH palette) */
+:root {
+  --color-primary: oklch(56% 0.18 164);
+  --color-primary-light: oklch(70% 0.14 164);
+  --color-primary-dark: oklch(40% 0.20 164);
+  --color-bg: oklch(96% 0.02 120);
+  --color-surface: oklch(98% 0.01 120);
+  --radius: 0.75rem;
+  --shadow-card: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Global utilities */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--color-bg);
+  color: #222;
+}
