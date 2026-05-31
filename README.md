@@ -115,3 +115,15 @@ npm run build:electron
 <div align="center">
   <p>Released under the MIT License.</p>
 </div>
+
+### ?? macOS 安装须知 (macOS Installation)
+
+由于本项目是免费开源项目，并未强制购买苹果开发者证书进行代码签名（Code Signing）。如果您下载 \.dmg\ 安装后，遇到 macOS 提示 **“已损坏无法打开”** 或 **“无法验证开发者”**，请按以下步骤操作：
+
+1. 打开 **“终端” (Terminal)** 应用。
+2. 输入并执行以下命令解除苹果的隔离黑名单：
+   \\\ash
+   sudo xattr -r -d com.apple.quarantine /Applications/FreeResource.app
+   \\\
+   *(注意：如果您修改了应用名称，请将路径替换为实际的 App 路径)*
+3. 重新打开应用即可完美运行。
