@@ -23,6 +23,7 @@ jobs:
 
       - name: Remove local .npmrc (Fix mirror 404 errors)
         run: rm -f .npmrc
+        shell: bash
 
       - name: Install Node.js
         uses: actions/setup-node@v4
