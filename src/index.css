@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    ToolVault — Complete Design System (OKLCH Dark Theme)
    ============================================================ */
 
@@ -610,10 +610,7 @@ textarea.input {
   font-size: 13px;
   color: var(--text-2);
   line-height: 1.55;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  word-break: break-word;
 }
 .card-cats {
   display: flex;
@@ -631,10 +628,7 @@ textarea.input {
   line-height: 1.5;
   padding-top: 6px;
   border-top: 1px solid var(--border-subtle);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  word-break: break-word;
 }
 
 /* ── Library Grid ────────────────────────────────────────── */
@@ -1930,3 +1924,5 @@ textarea.input {
   border-bottom: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-md);
 }
+
+.truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
